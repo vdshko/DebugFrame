@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DebugFrame
 
 @main
 struct ExampleApp: App {

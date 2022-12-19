@@ -1,16 +1,20 @@
 PODS:
+  - DebugFrame (0.0.1)
   - SnapshotTesting (1.9.0)
 
 DEPENDENCIES:
+  - DebugFrame
   - SnapshotTesting (= 1.9.0)
 
 SPEC REPOS:
   trunk:
+    - DebugFrame
     - SnapshotTesting
 
 SPEC CHECKSUMS:
+  DebugFrame: 39f20e1bbe6150058e239b744cccf0c8bf649f86
   SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
 
-PODFILE CHECKSUM: 6a1dc80d02efa8b4489f5c56a39527e18031029b
+PODFILE CHECKSUM: 6e25a6dad0d57076d1de03bce513a768e5ed8d79
 
 COCOAPODS: 1.11.3

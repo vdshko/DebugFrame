@@ -8,18 +8,64 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            title
+            Spacer()
+            rectangles
+            Spacer()
         }
-        .padding()
+        .debugFrame()
+        .padding(20.0)
+        .debugFrame()
+        .padding(30.0)
+        .background(Color.white)
+        .ignoresSafeArea()
+    }
+    
+    private var title: some View {
+        VStack {
+            Text("This is the Example of using \"DebugFrame\"")
+                .multilineTextAlignment(.center)
+                .font(.title)
+                .foregroundColor(Color.primary)
+            Image(systemName: "rectangle.dashed.and.paperclip")
+                .resizable()
+                .imageScale(.large)
+                .frame(width: 100, height: 100)
+                .foregroundColor(Color.red)
+        }
+    }
+    
+    private var rectangles: some View {
+        VStack {
+            RoundedRectangle(cornerRadius: 4.0)
+                .frame(width: 220.0, height: 100.0)
+                .foregroundColor(Color("first"))
+                .debugFrame()
+            HStack {
+                Spacer()
+                RoundedRectangle(cornerRadius: 4.0)
+                    .frame(width: 120.0, height: 150.0)
+                    .foregroundColor(Color("second"))
+                    .debugFrame()
+                    .padding(.trailing, 25.0)
+            }
+            HStack {
+                RoundedRectangle(cornerRadius: 4.0)
+                    .frame(width: 120.0, height: 100.0)
+                    .foregroundColor(Color("third"))
+                    .debugFrame()
+                    .padding(.leading, 20.0)
+                Spacer()
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
         ContentView()
     }
