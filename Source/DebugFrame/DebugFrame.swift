@@ -38,7 +38,7 @@ private struct DebugFrame: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     
     func debugFrame() -> some View {
         return modifier(DebugFrame())
