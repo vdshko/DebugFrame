@@ -1,0 +1,21 @@
+platform :ios, '14.0'
+use_frameworks!
+
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
+
+target 'Example' do
+    # pod 'DebugFrame', :path => '../'
+end
+
+target 'ExampleTests' do
+    # SnapshotTesting; https://github.com/pointfreeco/swift-snapshot-testing
+    pod 'SnapshotTesting', '1.9.0', :inhibit_warnings => true
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+        end
+    end
+end
