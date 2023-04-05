@@ -10,6 +10,8 @@ import SwiftUI
 
 private struct DebugFrame: ViewModifier {
     
+    let color: Color
+    
     func body(content: Content) -> some View {
         #if !DEBUG
             return content
@@ -24,9 +26,9 @@ private struct DebugFrame: ViewModifier {
                     ZStack(alignment: .bottom) {
                         Rectangle()
                             .strokeBorder(style: StrokeStyle(lineWidth: 1, dash: [5]))
-                            .foregroundColor(Color.red)
+                            .foregroundColor(color)
                         Text("\(origin) | \(size)")
-                            .foregroundColor(Color.red)
+                            .foregroundColor(color)
                             .font(.caption2)
                     }
                 }
@@ -40,7 +42,7 @@ private struct DebugFrame: ViewModifier {
 
 public extension View {
     
-    func debugFrame() -> some View {
-        return modifier(DebugFrame())
+    func debugFrame(color: Color = Color.red) -> some View {
+        return modifier(DebugFrame(color: color))
     }
 }
