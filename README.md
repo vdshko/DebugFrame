@@ -10,12 +10,13 @@ DebugFrame is a modifier for SwiftUI view, which is very easy to use and add to 
 ```
 VStack {
   title
-  Spacer()
-  rectangles
     .debugFrame()
   Spacer()
+  rectangles
+    .debugFrame(color: .black)
+  Spacer()
 }
-.debugFrame()
+.debugFrame(color: .black, .size)
 ```
 
-<img width="436" alt="Screenshot 2022-12-19 at 19 08 31" src="https://user-images.githubusercontent.com/43936569/208482070-81ababbe-250f-455a-9e1e-b0444aa2c86c.png">
+<img width="436" alt="Screenshot 2023-04-06 at 03 06 00" src="https://user-images.githubusercontent.com/43936569/230239666-4d91d59b-84a9-4a49-9db4-e2f5d8168470.png">
