@@ -2,7 +2,7 @@
 //  DebugFrame.h
 //  DebugFrame
 //
-//  Created by Vlad Shkodich on 19.12.2022.
+//  Created by Vladyslav Shkodych on 19.12.2022.
 //
 
 #import <Foundation/Foundation.h>
