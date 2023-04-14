@@ -1,6 +1,8 @@
 # DebugFrame
 
-DebugFrame is a modifier for SwiftUI view, which is very easy to use and add to any view you want. This modifier adds the overlay with stroke border and CGFrame parameters on your view. The modifier is so useful during making UI on your project using SwiftUI of course.
+DebugFrame lib - a simple and powerful tool that can help you build your SwiftUI views easily.
+
+Under the hood it's a modifier that can be applied to any SwiftUI view. It adds an overlay to your view, which displays a border around the view, along with frame information, such as the view’s origin and size. This can be incredibly helpful when trying to identify layout issues, such as views that are too large or small or views that are positioned incorrectly.
 
 ## Integration
 
