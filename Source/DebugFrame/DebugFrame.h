@@ -14,5 +14,3 @@ FOUNDATION_EXPORT double DebugFrameVersionNumber;
 FOUNDATION_EXPORT const unsigned char DebugFrameVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DebugFrame/PublicHeader.h>
-
-

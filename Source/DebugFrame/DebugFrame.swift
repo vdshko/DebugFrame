@@ -24,23 +24,23 @@ private struct DebugFrame: ViewModifier {
     let outputs: [DebugFrameOutput]
     
     func body(content: Content) -> some View {
-        #if !DEBUG
-            return content
-        #endif
-        
-        content
-            .overlay(
-                GeometryReader { geometry in
-                    ZStack(alignment: .bottom) {
-                        Rectangle()
-                            .strokeBorder(style: StrokeStyle(lineWidth: 1, dash: [5]))
-                            .foregroundColor(color)
-                        Text(defineOutput(with: geometry))
-                            .foregroundColor(color)
-                            .font(.caption2)
+        #if DEBUG
+            content
+                .overlay(
+                    GeometryReader { geometry in
+                        ZStack(alignment: .bottom) {
+                            Rectangle()
+                                .strokeBorder(style: StrokeStyle(lineWidth: 1, dash: [5]))
+                                .foregroundColor(color)
+                            Text(defineOutput(with: geometry))
+                                .foregroundColor(color)
+                                .font(.caption2)
+                        }
                     }
-                }
-            )
+                )
+        #else
+            content
+        #endif
     }
     
     private func defineOutput(with geometry: GeometryProxy) -> String {

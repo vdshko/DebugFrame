@@ -1,5 +1,5 @@
 PODS:
-  - DebugFrame (0.1.3)
+  - DebugFrame (0.1.5)
   - SnapshotTesting (1.9.0)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DebugFrame: e563c37cd7499f172aad51c44fc2034f51a6544e
+  DebugFrame: 91b1836b92141f2cce8f125d1e930126f21530f4
   SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
 
 PODFILE CHECKSUM: 8f2d82fe448e2e09320a9a650ed45b374d09e3ba
