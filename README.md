@@ -15,7 +15,7 @@ Under the hood it's a modifier that can be applied to any SwiftUI view. It adds 
 `pod 'DebugFrame'`
 
 ## Usage
-```
+```swift
 VStack {
   title
     .debugFrame()
@@ -27,4 +27,4 @@ VStack {
 .debugFrame(color: .black, .size)
 ```
 
-<img width="436" alt="Screenshot 2023-04-06 at 03 06 00" src="https://user-images.githubusercontent.com/43936569/230239666-4d91d59b-84a9-4a49-9db4-e2f5d8168470.png">
+<img width="436" alt="Screenshot of an app using DebugFrame. There are a few colored rectangles, and each one has a dotted line overlay and text showing the width and height." src="https://user-images.githubusercontent.com/43936569/230239666-4d91d59b-84a9-4a49-9db4-e2f5d8168470.png">
