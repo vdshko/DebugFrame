@@ -9,6 +9,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/vdshko/DebugFrame.git", :tag => "#{spec.version}" }
   spec.source_files = 'Source/DebugFrame/**/*.swift'
   spec.ios.deployment_target = "14.0"
-  spec.osx.deployment_target = "10.15"
+  spec.osx.deployment_target = "11.0"
   spec.swift_versions = "5.0"
 end
