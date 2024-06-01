@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "DebugFrame"
-  spec.version      = "2.0.0"
+  spec.version      = "2.2.1"
   spec.summary      = "Debug frame modifier for SwiftUI views."
   spec.homepage     = "https://github.com/vdshko/DebugFrame.git"
   spec.license      = { :type => "MIT", :file => "License" }
